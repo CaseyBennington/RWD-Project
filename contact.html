@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <meta charset="utf-8"> 
+      <title>The Flying V: Flight Training</title> 
+  <link rel="stylesheet" href="styles.css" > 
+  <meta name="viewport"  content="width=device-width,initial-scale=1.0" />
+<!--[if lt IE 9]>
+<script src="html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+	<script src="js-webshim/minified/polyfiller.js"></script>
+  
+	<script>
+	//webshims.setOptions('basePath', '/js-webshim/minified/shims/');
+  
+	webshims.polyfill();
+  
+	$(function(){
+		// use all implemented API-features on DOM-ready
+	});
+	</script>
+</head> 
+<body> 
+<div id="wrapper">
+<header>
+<p>[The flying V always wins!]</p>   <!-- why does the ] make this not appear? -->
+</header> <!-- END of Header element -->
+<nav> 
+      <ul> 
+      <li><a href="index.html">Home</a></li> 
+      <li><a href="news.html">News</a></li> 
+      <li><a href="fleet.html">Fleet</a></li> 
+	  <li><a href="about.html">About Us</a></li> 
+	  <li><a href="#">Contact Us</a></li> 
+    </ul> 
+</nav> <!-- END of Navigation element -->
+<h1>The Flying V: Flight School</h1> 
+
+<aside id="points"> 
+  <p class="intro">The Flying V is <em>the</em> flight school in San Diego:</p> 
+    <ul> 
+      <li>Praesent vel turpis quis dui scelerisque hendrerit.</li> 
+      <li>Aenean vitae odio sed dolor posuere velit.</li> 
+      <li>Aliquam molestie urna sit amet diam viverra.</li> 
+      <li>Maecenas sit amet quam sed ante pretium.</li> 
+      <li>Nulla sed sapien pellentesque, viverra dolor ac.</li>
+    </ul> 
+ 
+     <h2>Try Us!</h2> 
+  <dl> 
+    <dt>Location:</dt> 
+    <dd>123 Airport Drive<br /> 
+    San Diego, CA 92109</dd> 
+    <dt>Hours:</dt> 
+      <dd> 
+        <dl> 
+          <dt>Mon-Sun</dt> 
+          <dd>8:00am - 11:30pm</dd>
+        </dl> 
+      </dd> 
+    <dt>Contact us:</dt> 
+    <dd>+1 (540) 329-1222</dd> 
+  </dl> 
+  <p id="video">
+  <iframe src="https://www.youtube.com/embed/LvCsHoUST2Q" frameborder="0" allowfullscreen></iframe>    <!-- width="854" height="510" -->
+ </p> 
+</aside><!-- END of Points element -->
+ 
+<section id="main">
+  <h2>Contact Us</h2> 
+	  <form id="contactform" action="#" method="post">
+	  <div class="formcolumn">
+		<fieldset id="info">
+		<legend>Enter your information</legend>
+			<label for="firstname">First Name:</label><input type="text" name="firstname" required autofocus>
+			<label for="lastname">Last Name:</label><input type="text" name="lastname" required>
+			<label for="tel">Phone:</label><input type="tel" name="phone" placeholder="Eg. +447500000000" required>
+			<label for="email">Email:</label><input type="email" name="email" placeholder="example@domain.com" required>
+			<label for="url">Website:</label><input type="url" name="website" required>
+		</fieldset>
+		</div>
+		<div class="formcolumn">
+			<fieldset id="experience">
+			<legend>Experience</legend>
+			<ul>
+				<li><input type="radio" name="experience" value="0">0</li>
+				<li><input type="radio" name="experience" value="1">1-5 Years</li>
+				<li><input type="radio" name="experience" value="6">6-15 Years</li>
+				<li><input type="radio" name="experience" value="15">>15 Years</li>
+			</ul>
+				<label for="age">Age:</label>1 <input type="range" name="age" min="1" max="120"> 120
+			</fieldset>
+			<fieldset id="sex">
+			<legend>Sex</legend>
+			<ul>
+				<li><input type="checkbox" name="sex" value="male">Male</li>
+				<li><input type="checkbox" name="sex" value="female">Female</li>
+			</ul>
+			</fieldset>
+			<div id="plane">
+				<label for="plane">Which Plane:</label>
+				<select>
+					<option value="plane 1">Plane 1</option>
+					<option value="plane 2">Plane 2</option>
+					<option value="plane 3">Plane 3</option>
+					<option value="plane 4">Plane 4</option>
+					<option value="plane 5">Plane 5</option>
+					<option value="plane 6">Plane 6</option>
+				</select>
+			</div>
+			</div>
+			<div id="comments">
+				<label for="comments">Comments:</label>
+				<textarea name="comments" row=5></textarea>
+			</div>
+		<input type="submit" value="Submit">
+	  </form>
+  </section>
+<!-- END of Main element -->
+<footer> 
+  <p>Take to the Sky!<br>The Flying V<br> Casey Bennington ­ ITD 120 Spring 2014</p> 
+</footer> <!-- END of Footer element -->
+</div> <!-- END of Wrapper element -->
+</body> 
+</html>
